@@ -31,5 +31,8 @@ public class TreeApp {
 
         System.out.println();
         System.out.println("Sum of the leaf values : "+tree.sumOfLeave(tree.root));
+
+        System.out.println();
+        System.out.println("Height of the tree is: " + tree.height(tree.root));
     }
 }
