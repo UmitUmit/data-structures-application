@@ -124,4 +124,11 @@ public class MyTree {
         return sumOfLeave(root.leftChild) + sumOfLeave(root.rightChild);
     }
 
+    //task -6 method that returns height of a node in a BST
+    public int height(Node root){
+        if (root==null) return -1;
+        if (isLeaf(root)) return 0;
+        return 1+ Math.max(height(root.leftChild), height(root.rightChild));
+    }
+
 }

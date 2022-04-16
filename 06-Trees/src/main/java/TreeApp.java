@@ -30,6 +30,6 @@ public class TreeApp {
         System.out.println("Number of leaves: "+tree.countLeaves(tree.root));
 
         System.out.println();
-        System.out.println("Sum of the leaves is: "+tree.sumOfLeave(tree.root));
+        System.out.println("Sum of the leaf values : "+tree.sumOfLeave(tree.root));
     }
 }
