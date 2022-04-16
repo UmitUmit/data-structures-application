@@ -94,8 +94,34 @@ public class MyTree {
             else if (value > current.value) current = current.rightChild;   //branch right
             else return true;
         }
-
         return false;
+    }
+
+// task -2, return true if the node is leaf
+    public boolean isLeaf(Node node) {
+        return node.leftChild == null && node.rightChild == null;
+    }
+
+    //task-3 a  method prints leaves of a BST
+    public void printLeaves(Node root){
+        if (root == null) return;
+        if (isLeaf(root)) System.out.println(root.value + ", ");
+        printLeaves(root.leftChild);
+        printLeaves(root.rightChild);
+    }
+
+    //task-4 method that counts leaves of a BST
+    public int countLeaves(Node root){
+        if (root==null) return 0;
+        if (isLeaf(root)) return 1;
+        return countLeaves(root.leftChild) + countLeaves(root.rightChild);
+    }
+
+    //task -5 method that returns sum of the leaf values
+    public int sumOfLeave(Node root){
+        if (root==null) return 0;
+        if (isLeaf(root)) return root.value;
+        return sumOfLeave(root.leftChild) + sumOfLeave(root.rightChild);
     }
 
 }

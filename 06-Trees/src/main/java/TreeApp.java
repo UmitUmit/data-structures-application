@@ -17,8 +17,19 @@ public class TreeApp {
 //        System.out.println("Post-Order Traversal");
 //        tree.postOrderTraversal(tree.root);
 //
-        System.out.println(" level order traversal");
-        tree.levelOrderTraversal(tree.root);
+//        System.out.println(" level order traversal");
+//        tree.levelOrderTraversal(tree.root);
+//
+//        System.out.println("contains method ");
+//        System.out.println("tree contains 6 is: "+ tree.contains(6));
 
+        System.out.println("Print leaves of the tree");
+        tree.printLeaves(tree.root);
+
+        System.out.println();
+        System.out.println("Number of leaves: "+tree.countLeaves(tree.root));
+
+        System.out.println();
+        System.out.println("Sum of the leaves is: "+tree.sumOfLeave(tree.root));
     }
 }
