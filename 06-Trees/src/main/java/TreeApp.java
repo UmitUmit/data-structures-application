@@ -8,15 +8,17 @@ public class TreeApp {
         }
         VisualizeTree.printTree(tree.root, null, false);
 
-
-        System.out.println("Pre-Order Traversal");
-        tree.preOrderTraversal(tree.root);
-        System.out.println();
-        System.out.println("In-Order Traversal");
-        tree.inOrderTraversal(tree.root);
-        System.out.println();
-        System.out.println("Post-Order Traversal");
-        tree.postOrderTraversal(tree.root);
+//        System.out.println("Pre-Order Traversal");
+//        tree.preOrderTraversal(tree.root);
+//        System.out.println();
+//        System.out.println("In-Order Traversal");
+//        tree.inOrderTraversal(tree.root);
+//        System.out.println();
+//        System.out.println("Post-Order Traversal");
+//        tree.postOrderTraversal(tree.root);
+//
+        System.out.println(" level order traversal");
+        tree.levelOrderTraversal(tree.root);
 
     }
 }

@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class MyTree {
 
     public Node root;
@@ -68,6 +71,20 @@ public class MyTree {
         System.out.print(root.value+", ");
 
     }
+
+
+    public void levelOrderTraversal(Node root){
+        if (this.root ==null) return;
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(this.root);
+        while (!queue.isEmpty()){
+            Node toVisit = queue.poll(); //poll don't give exception
+            System.out.println(toVisit.value +", ");
+            if (toVisit.leftChild!=null) queue.add(toVisit.leftChild);
+            if (toVisit.rightChild!=null) queue.add(toVisit.rightChild);
+        }// end while
+
+    } //end levelOrder
 
 
 }
